@@ -55,7 +55,8 @@ export function generateAbstractTree(
     ({ nodeName, childNodes }) =>
       nodeName !== 'style' && childNodes.length === 0
   );
-  assert(oneLevelPathNodes.length >= 1, debugName);
+
+  // assert(oneLevelPathNodes.length >= 1, debugName);
 
   return normalizeNode(node, debugName);
 }
