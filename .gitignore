@@ -1,31 +1,42 @@
-
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
-node_modules/
-**/*/node_modules
-
-# testing
-/coverage
-
-# misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+node_modules/
+**/*/node_modules/
+dist/
+lib/
+es/
 npm-debug.log*
 yarn-debug.log*
-lerna-debug.log
 yarn-error.log*
 
-# IDE
+# Editor directories and files
 .idea
 .vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
 # lock
 package-lock.json
-**/*/package-lock.json
 yarn.lock
-**/*/yarn.lock
+
+# rollup cache
+.rpt2_cache
+
+# auto generated
+_site/
+.cache
+public
+
+# auto src generated
+src/**/*.ts
+
+# test generated
+test/root/src/**/*.ts
+test/root/inline-svg/**/*.svg
+
+# inline generated
+inline-svg/**/*.svg
+
+# publish
+*.tgz
