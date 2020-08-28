@@ -1,6 +1,6 @@
 {
   "name": "abstract-svg",
-  "version": "1.2.1",
+  "version": "0.1.0",
   "description": "Ant Design Icons",
   "module": "lib/index.es.js",
   "main": "lib/index.js",
